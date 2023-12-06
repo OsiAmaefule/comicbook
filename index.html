@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#comic">Comic</a></li>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+          <p>The Story of Solar Flare VOL 1</p>
+            <h1>In the city's darkest moments, a blazing hero emerges from the <br> shadows, Solar Flare. Gifted with the extraordinary ability to <br> control fire, 
+                he harnesses the scorching power of the sun itself. As flames dance at his command, 
+                Solar Flare stands as a beacon of hope, ready to ignite justice and quench the thirst of evil with the searing might of his fiery prowess.</h1>
+        </div>
+      </div>
+    </div>
+    <!----------about--------- -->
+    <div id="about">
+      <div class="container">
+        <nav>
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#comic">Comic</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+          </nav>
+          <br>
+          <br>
+          <br>
+        <div class="row">
+          <div class="about-col-1">
+            <img src="IMG_6444.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br>
+            <p>I began coding around two years ago. Initially, I was clueless, but I persevered. Now, I can unleash my creative side through code, like expressing my love for comics. 
+                Since childhood, I've adored comic books, often persuading my father to take me to Books-A-Million, 
+                where I could read them for free while he searched for his own books. I hope this website reflects my passion for both coding and comics!</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('links')">Links</p>
+            </div>
+            <div class="tab-contents active-tab" id="links">
+              <ul>
+                <li><span>Email</span><br><a href="https://mail.google.com/mail/u/2/?ogbl#inbox" style="color: white;">Click here to send me an E-mail.</a></li>
+                <li><span>Resume</span><br><a href="https://docs.google.com/document/d/1bwdRIHDsi2IQ9AzDEJXE4DlJGb1hN486f2j-Ywe1m5o/edit#heading=h.a5ac7o1i7dy" style="color: white;">Click here to view my Resume.</a></li>
+                <li><span>LinkedIn</span><br><a href="https://www.linkedin.com/in/osiamaefule/" style="color: white;">Click here to view my LinkedIn.</a></li>
+                <li><span>Github</span><br><a href="https://github.com/OsiAmaefule" style="color: white;">Click here to view my Github.</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      function opentab(tabname) {
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+
+    </script>
+    </body>
+    
+    <div class="copyright">
+        <p>Copyright © Osi Amaefule</p>
+    </div>
+    
+      <!----------comic----------->
+    
+      <div id="comic">
+        <div class="container">
+            <nav>
+                <ul>
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#comic">Comic</a></li>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+              </nav>
+              <br>
+              <br>
+              <br>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="solarflare.png">
+                  </div>
+                  <div class="about-col-2">
+                    <h1 class="sub-title">About the Comic</h1>
+                    <br>
+                    <p>In the heart of the city, Solar Flare faced his greatest challenge yet – an alliance of villains known as the Shadow Syndicate, 
+                      led by the cunning Eclipse Master. 
+                      This nefarious group sought to plunge the city into eternal darkness, harnessing forbidden artifacts to amplify their dark powers. <br>
+                      <br>
+                      To counter this threat, Solar Flare joined forces with two formidable allies – Lumina, a brilliant scientist with the ability to manipulate light, 
+                      and Tempest, 
+                      a weather-controlling hero capable of summoning powerful storms. Together, they formed the Triad of Light, determined to extinguish the looming shadows. <br>
+                      <br>
+                      The first clash occurred at the city's power plant, where the Syndicate aimed to disrupt the energy grid and cast the metropolis into chaos. Solar Flare, 
+                      with flames flickering in his wake, confronted Pyroshade, a villain capable of absorbing and redirecting heat. 
+                      The battle raged on, but Solar Flare cleverly manipulated the environment, 
+                      channeling solar energy to overpower Pyroshade and restore the power plant. <br>
+                      <br>
+                      In their pursuit of the Syndicate, the Triad faced illusions crafted by Mirage Mistress, a deceptive villainess with the power of illusion. 
+                      Lumina's keen intellect and Solar Flare's fiery resolve unraveled the illusions, exposing the true path to the Shadow Syndicate's hideout.<br>
+                      <br>
+                      The final showdown unfolded at the Shadow Nexus, a dark citadel pulsating with malevolent energy. Eclipse Master, surrounded by his minions, 
+                      unleashed a torrent of shadowy forces upon the Triad.
+                       Lumina's radiant beams clashed with the Eclipse Master's darkness, creating a dazzling spectacle of light and shadow. Tempest, 
+                       commanding the forces of nature, summoned a tempestuous storm that overwhelmed the Syndicate's minions. <br>
+                       <br>
+                      In a climactic moment, Solar Flare unleashed his ultimate power, drawing upon the sun's energy to create a blinding solar flare that enveloped the Shadow Nexus.
+                       The intense light purged the darkness, neutralizing the Eclipse Master's sinister plans. <br>
+                       <br>
+                      With the city bathed in the glow of Solar Flare's triumph, the Triad of Light emerged victorious, their alliance proving stronger than the shadows that sought to engulf them. 
+                      The citizens hailed them as guardians of light, grateful for their unwavering commitment to justice. 
+                      And so, Solar Flare continued to shine as a symbol of hope, his fiery spirit burning brightly against the forces of darkness.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+            
+      </div>
+        
+       
